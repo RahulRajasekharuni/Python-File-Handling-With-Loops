@@ -1,0 +1,6 @@
+Rule 1: If Age >= 25 & Win-Loss >= 8 & Gender = Male --> Continue.
+Rule 2: If Age >= 25 & Win-Loss < 8 & Gender = Male --> Discontinue.
+Rule 3: If Age >= 25 & Gender = Female --> Discontinue.
+Rule 4: If Age < 25 & Log-in >= 150 --> Continue.
+Rule 5: If Age < 25 & Win-Loss >= 5 & Log-in < 150 --> Continue.
+Rule 6: If Age < 25 & Win-Loss < 5 & Log-in < 150 --> Discontinue.

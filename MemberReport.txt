@@ -1,0 +1,4 @@
+Age		Win-Loss	Log-in		Gender		Income		Status
+--------------------------------------------------------------------------------------
+35		5		512		Male		20000		Discontinue
+20		2		200		Female		30000		Continue

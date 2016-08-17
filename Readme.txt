@@ -7,6 +7,11 @@ AB Games have a rich database on their members having information of each member
 
 Assume that SysFor produces logic rules from a dataset and the logic rules are stored by SysFor in a text file called Rules.txt as follows.
 
+Age		Win-Loss	Log-in		Gender		Income		Status
+--------------------------------------------------------------------------------------
+35		5		512		Male		20000		?
+20		2		200		Female		30000		?
+
 
 
 GE stands for Greater than or Equal to, LT stands for Less Than, and the “-“ sign indicates has no impact.
@@ -17,6 +22,11 @@ The first rule states that if the Age of a member is greater than or equal to 25
 
 AB Games also has a dataset on their current members for whom AB Games does not know whether they will continue or discontinue. The dataset is stored in a file called Members.txt as follows.
 
+Age		Win-Loss	Log-in		Gender		Income		Status
+--------------------------------------------------------------------------------------
+35		5		512		Male		20000		Discontinue
+20		2		200		Female		30000		Continue
+
 
 
 In the Members.txt file there are two current members. The first member is 35 years old, has a Win-Loss ratio of 5, has logged in 512 times, is Male, and earns $20,000 per annum. The file also has similar information on the second member. However, the “?” mark for the variable Status indicates that AB Games at this stage does not know whether or not the members will continue with them.
@@ -24,8 +34,6 @@ In the Members.txt file there are two current members. The first member is 35 ye
 Write a Python code that will match the members in the Members.txt file with the logic rules in the Rules.txt file to identify the Status of each member. Your Python code will then write a file called MemberReport.txt as follows.
 
  
-
-
 Since the first member in the Members.txt file has age greater than 25 and win loss ratio less than 8 and he is a Male, he matches the 2nd rule in the Rules.txt file which suggests that he will discontinue. Similarly, the 2nd member matches the 4th rule which suggests that she will continue.
 
 Note that although the structure and schema of the Rules.txt file and Members.txt file will remain unchanged AB Games can change the values in the files. Additionally, the Rules.txt file can have any number of rules. Similarly, the Members.txt file can also have any number of members. Your Python code should still produce correct MemberReport.txt file.
